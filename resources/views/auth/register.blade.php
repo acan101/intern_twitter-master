@@ -70,7 +70,7 @@
                             <div class="form-group row">
                                 <div class="col-6 offset-4">
                                     <button type="submit" class="btn btn-primary">
-                                        登録
+                                        ok
                                     </button>
                                 </div>
                             </div>

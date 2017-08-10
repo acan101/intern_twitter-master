@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+
 
 class MockController extends Controller
 {
@@ -12,6 +14,7 @@ class MockController extends Controller
     public function account()
     {
         return view('settings.account');
+
     }
 
     /**
@@ -22,6 +25,10 @@ class MockController extends Controller
         return view('settings.profile');
     }
 
+
+
+
+
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -29,7 +36,19 @@ class MockController extends Controller
     {
         return view('search');
     }
+    public function postaccount(Request $data)
+    {
+        $input = $data->all();
+        $user = \Auth::user();
+        $user->update([
+            'url_name' => $input['url_name'],
+            'email' => $input['email'],
+            'password' => bcrypt($input['password'])
+        ]);
 
+        return view('home');
+
+    }
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -53,4 +72,20 @@ class MockController extends Controller
     {
         return view('user.followers');
     }
+
+    public function reprofile(Request $duda)
+    {
+        $output = $duda->all();
+        $user = \Auth::user();
+        $user->update([
+            'description' => $output['description'],
+
+            'display_name' => bcrypt($output['display_name'])
+
+        ]);
+
+        return view('home');
+
+    }
+
 }

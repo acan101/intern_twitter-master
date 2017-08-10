@@ -2,10 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Http\Controllers\MockController;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
 
 
 /**
@@ -34,7 +33,7 @@ use Illuminate\Notifications\Notifiable;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\User whereUrlName($value)
  * @mixin \Eloquent
  */
-class User extends Authenticatable
+class Tweet extends Authenticatable
 {
     use Notifiable;
 
@@ -44,12 +43,10 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'url_name',
-        'email',
-        'password',
-        'display_name',
-        'avatar',
-        'description'
+        'id',
+        'user_id',
+        'body',
+
     ];
 
     /**
@@ -58,6 +55,9 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
-        'remember_token',
-    ];}
+    ];
+
+
+
+
+}

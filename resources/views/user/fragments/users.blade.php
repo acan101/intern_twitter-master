@@ -3,7 +3,7 @@
         <div class="card card-profile mb-4">
             <div class="card-header bg-danger"></div>
             <div class="card-block">
-                <a href="#">
+                <a href="proflie">
                     <img class="avatar card-profile-img" src="{{ asset('images/no-thumb.png') }}">
                 </a>
 
@@ -12,7 +12,7 @@
                 </span>
 
                 <strong class="card-title d-block">
-                    <a class="text-inherit" href="#">snicmakino</a>
+                    <a class="text-inherit" href="profile">snicmakino</a>
                 </strong>
 
                 <p class="mb-4">

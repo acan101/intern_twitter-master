@@ -22,7 +22,7 @@
                 </li>
                 <li class="dropdown-divider"></li>
                 <li class="hidden-md-up">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="profile">
                         <span class="icon icon-cog"></span> 設定
                     </a>
                 </li>
@@ -46,7 +46,7 @@
 
             <ul class="nav navbar-nav hidden-sm-down">
                 <li class="nav-item nav-account dropdown">
-                    <a class="nav-link" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    <a class="nav-link" href="profile" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">
                         <img class="rounded-circle" src="{{ asset('images/no-thumb.png') }}">
                     </a>

@@ -16,13 +16,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="following" class="nav-link">
                     フォロー
                     <strong class="d-block">30</strong>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="followers" class="nav-link">
                     フォロワー
                     <strong class="d-block">7</strong>
                 </a>

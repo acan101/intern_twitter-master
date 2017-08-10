@@ -17,7 +17,7 @@
                 <strong>プロフィール</strong>
             </div>
             <div class="card-block">
-                <form method="POST" action="#" enctype="multipart/form-data">
+                <form method="POST" action="{{route('reprofile')}}" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     {{ method_field('PUT') }}
 

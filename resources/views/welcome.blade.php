@@ -13,8 +13,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #000000;
+                color:#d6e9c6;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
@@ -46,13 +46,13 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 320px;
             }
 
             .links > a {
-                color: #636b6f;
+                color: #c1e2b3;
                 padding: 0 25px;
-                font-size: 12px;
+                font-size: 55px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -70,16 +70,16 @@
                 <div class="top-right links">
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
+                        @else
+                            <a href="{{ url('/login') }}">Login</a>
+                            <a href="{{ url('/register') }}">Register</a>
                     @endif
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    1 0 %
                 </div>
 
                 <div class="links">

@@ -12,10 +12,10 @@
     <div class="col-lg-6">
         <div class="card mb-4">
             <div class="card-header" style="background-color: #FFFFFF;">
-                <strong>アカウント</strong>
-            </div>
+                <strong>新規登録</strong>
+        </div>
             <div class="card-block">
-                <form method="POST" action="#">
+                <form method="POST" action="{{route('postaccount')}} ">
                     {{ csrf_field() }}
                     {{ method_field('PUT') }}
 
@@ -23,7 +23,7 @@
                         <label for="url_name" class="col-4 col-form-label">ユーザー名</label>
                         <div class="col-8">
                             <input name="url_name" type="text" maxlength="15" id="url_name" class="form-control"
-                                   value="snicmakino">
+                                   value="">
 
                             @if ($errors->has('url_name'))
                                 <div class="form-control-feedback">
@@ -36,7 +36,7 @@
                         <label for="email" class="col-4 col-form-label">メールアドレス</label>
                         <div class="col-8">
                             <input name="email" type="email" id="email" class="form-control"
-                                   value="makino@asia-quest.jp">
+                                   value="matchaais@naver.com">
 
                             @if ($errors->has('email'))
                                 <div class="form-control-feedback">
